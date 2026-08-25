@@ -142,7 +142,8 @@
 
   <div class="celebrate" id="celebrate">🎉 Class dismissed.<br>Sabbatical begins. 🎉</div>
 
-  <p class="target">Target: <strong>Tuesday, December 8, 2026 &middot; 10:00 p.m. ET</strong> &mdash; classes end.</p>
+  <p class="target">Target: <strong>Tuesday, December 8, 2026 &middot; 10:00 p.m. ET</strong> &mdash; classes end.<br>
+  Her last lecture lands earlier: <strong>Friday, December 4</strong>.</p>
 
   <div class="bar-block">
     <div class="bar-top"><span>Semester progress</span><span class="pct" id="pct">0%</span></div>
@@ -151,25 +152,25 @@
   </div>
 
   <div class="grid">
-    <div class="stat"><div class="big" id="classdays">--</div><div class="cap">class days left<br><span>weekdays, minus Labor Day, Election Day &amp; Thanksgiving break</span></div></div>
+    <div class="stat"><div class="big" id="classdays">--</div><div class="cap">MWF class days left<br><span>Mon &middot; Wed &middot; Fri, minus Labor Day &amp; Thanksgiving break</span></div></div>
     <div class="stat"><div class="big" id="weeks">--</div><div class="cap">weeks to go</div></div>
     <div class="stat"><div class="big" id="mondays">--</div><div class="cap">Mondays left in the semester</div></div>
   </div>
 
   <section class="sabb">
-    <h2>Then: nine months of sabbatical 🌤️</h2>
-    <p>From the moment that last class lets out, Hanieh is off the teaching clock for nine straight months &mdash; no syllabi, no office hours, no 8 a.m. sections.</p>
+    <h2>Then: the nine-month sabbatical 🌤️</h2>
+    <p>From the moment that last class lets out, Hanieh is off the teaching clock until Fall 2027 rolls around &mdash; no syllabi, no office hours, no 8 a.m. sections.</p>
     <div class="span">
-      <span class="chip">Begins <b>Dec 8, 2026</b></span>
-      <span class="chip">Runs <b>9 months</b></span>
-      <span class="chip">Through <b>Sep 8, 2027</b></span>
-      <span class="chip"><b id="sabbdays">274</b> days of freedom</span>
+      <span class="chip">Begins <b>Tue, Dec 8, 2026</b></span>
+      <span class="chip">Back <b>Wed, Aug 25, 2027</b></span>
+      <span class="chip"><b id="sabbdays">259</b> days of freedom</span>
     </div>
   </section>
 
   <footer>
     Dates from the <a href="https://www.udel.edu/academics/registrar/calendar/" target="_blank" rel="noopener">UD Registrar's academic calendar</a>.<br>
-    Classes end at 10:00 p.m. on Tue, Dec 8, 2026 &middot; Reading Day Dec 9 &middot; Finals Dec 10&ndash;14.
+    Classes end at 10:00 p.m. on Tue, Dec 8, 2026 &middot; Reading Day Dec 9 &middot; Finals Dec 10&ndash;14.<br>
+    Fall 2027 isn't on the UD calendar yet &mdash; the return date assumes the last Wednesday of August.
   </footer>
 </div>
 
@@ -180,7 +181,9 @@
   // Classes end   Tue Dec  8, 2026, 10:00 p.m. EST = 03:00 UTC Dec 9
   var START    = Date.UTC(2026, 7, 25, 12, 0, 0);
   var TARGET   = Date.UTC(2026, 11, 9, 3, 0, 0);
-  var SABB_END = Date.UTC(2027, 8, 9, 3, 0, 0); // nine months later
+  // Back to teaching: first day of Fall 2027, assumed to be the last Wednesday
+  // of August (Wed Aug 25, 2027, 8:00 a.m. EDT). UD hasn't published it yet.
+  var SABB_END = Date.UTC(2027, 7, 25, 12, 0, 0);
 
   // No-class weekdays during the fall term (Eastern dates).
   var NO_CLASS = {
@@ -205,7 +208,8 @@
     while (cur <= end) {
       var iso = cur.toISOString().slice(0, 10);
       var dow = cur.getUTCDay();
-      if (dow !== 0 && dow !== 6 && !NO_CLASS[iso]) {
+      // Hanieh teaches Mon / Wed / Fri only.
+      if ((dow === 1 || dow === 3 || dow === 5) && !NO_CLASS[iso]) {
         days++;
         if (dow === 1) mondays++;
       }

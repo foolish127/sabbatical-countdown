@@ -9,10 +9,11 @@ Everything lives in `index.html`: no build step, no dependencies, no tracking.
 
 - Live days / hours / minutes / seconds to the final class bell
 - Semester progress bar (Aug 25 → Dec 8, 2026)
-- Class days remaining — weekdays only, minus Labor Day (Sep 7), Election Day (Nov 3),
+- MWF class days remaining (Hanieh teaches Mon/Wed/Fri), minus Labor Day (Sep 7)
   and Thanksgiving break (Nov 23–27)
 - Weeks left, Mondays left
-- Sabbatical span: Dec 8, 2026 → Sep 8, 2027
+- Sabbatical span: Dec 8, 2026 → Wed Aug 25, 2027 — the assumed first day of Fall 2027
+  (last Wednesday of August; UD hasn't published the 2027–28 calendar yet)
 - Confetti (click anywhere for more; a big burst when the clock hits zero)
 
 ## Publish on GitHub Pages
