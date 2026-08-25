@@ -1,7 +1,7 @@
 # Hanieh's Sabbatical Countdown
 
 A single-page countdown to the **last day of classes at the University of Delaware**
-(Tuesday, December 8, 2026, 10:00 p.m. ET) — the moment a nine-month sabbatical begins.
+(Tuesday, December 8, 2026, 10:00 p.m. ET), the moment a nine-month sabbatical begins.
 
 Everything lives in `index.html`: no build step, no dependencies, no tracking.
 
@@ -10,10 +10,10 @@ Everything lives in `index.html`: no build step, no dependencies, no tracking.
 - Live days / hours / minutes / seconds to the final class bell
 - Semester progress bar (Aug 26 → Dec 8, 2026)
 - MWF class days remaining (Hanieh teaches Mon/Wed/Fri), minus Labor Day (Sep 7)
-  and Thanksgiving break (Nov 23–27)
+  and Thanksgiving break (Nov 23-27)
 - Weeks left, Mondays left
-- Sabbatical span: Dec 8, 2026 → Wed Aug 25, 2027 — the assumed first day of Fall 2027
-  (last Wednesday of August; UD hasn't published the 2027–28 calendar yet)
+- Sabbatical span: Dec 8, 2026 → Wed Aug 25, 2027, the assumed first day of Fall 2027
+  (last Wednesday of August; UD hasn't published the 2027-28 calendar yet)
 - Confetti (click anywhere for more; a big burst when the clock hits zero)
 
 ## Publish on GitHub Pages
@@ -34,4 +34,4 @@ Everything lives in `index.html`: no build step, no dependencies, no tracking.
 
 From the [UD Registrar's academic calendar](https://www.udel.edu/academics/registrar/calendar/):
 classes begin Wed Aug 26, 2026; classes end 10:00 p.m. Tue Dec 8, 2026; Reading Day Dec 9;
-finals Dec 10–14.
+finals Dec 10-14.
