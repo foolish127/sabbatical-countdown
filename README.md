@@ -8,7 +8,7 @@ Everything lives in `index.html`: no build step, no dependencies, no tracking.
 ## What it shows
 
 - Live days / hours / minutes / seconds to the final class bell
-- Semester progress bar (Aug 25 → Dec 8, 2026)
+- Semester progress bar (Aug 26 → Dec 8, 2026)
 - MWF class days remaining (Hanieh teaches Mon/Wed/Fri), minus Labor Day (Sep 7)
   and Thanksgiving break (Nov 23–27)
 - Weeks left, Mondays left
@@ -33,5 +33,5 @@ Everything lives in `index.html`: no build step, no dependencies, no tracking.
 ## Dates
 
 From the [UD Registrar's academic calendar](https://www.udel.edu/academics/registrar/calendar/):
-classes begin Aug 25, 2026; classes end 10:00 p.m. Tue Dec 8, 2026; Reading Day Dec 9;
+classes begin Wed Aug 26, 2026; classes end 10:00 p.m. Tue Dec 8, 2026; Reading Day Dec 9;
 finals Dec 10–14.
